@@ -5,6 +5,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <p>This is the about page! </p>
+      <button>does this work?</button>
     </Layout>
   )
 }
