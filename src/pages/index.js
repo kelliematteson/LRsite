@@ -1,11 +1,11 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Layout from '../components/layout';
+
 
 export default function HomePage() {
   return (
-    <div>
-      <Nav />
+    <Layout>
       <p>hello from the home page! Pray for me!!!!</p>
-    </div>
+    </Layout>
   )
 }
