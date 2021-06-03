@@ -7,11 +7,13 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 10px;
+    background: var(--offwhite);
   }
 
   body {
     font-size: 2rem;
-    background: var(--offwhite);
+    text-align: center;
+    height: 100%;
   }
 
   button {
