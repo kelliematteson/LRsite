@@ -1,3 +1,7 @@
+// import dotenv from 'dotenv';
+
+// dotenv.config({ path: '.env' });
+
 module.exports = {
   siteMetadata: {
     title: `Leena Rao`,
@@ -7,6 +11,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: 'a4zfisgw',
+        dataset: 'production',
+        watchMode: true,
+        token: 'skW0sq9pzgcIxz6X3LAbsv458JityhLBJ8rdnrwPLUOhuFYjKnsTiIoLjoXdCF1rOvpDJdjSYBDLbvNxIjN6ta4FhXriJVaLNRCQoQKmsss2bAPfRBrNeEEnwKko6LnQzGTvIVUBevya1oTTI1POZai0Niy1LSGWCTllWsfKNsyg0bycdx7L',
+      }
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
