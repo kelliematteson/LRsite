@@ -1,11 +1,11 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Layout from '../components/layout';
 
 export default function AboutPage() {
   return (
-    <div>
-      <Nav />
+    <Layout>
       <p>This is the about page! </p>
-    </div>
+      <button>does this work?</button>
+    </Layout>
   )
 }
