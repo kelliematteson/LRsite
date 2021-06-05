@@ -14,6 +14,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
     text-align: center;
     height: 100%;
+    width: 82%;
+    position: fixed;
+    top: 0;
+    right: 0;
   }
 
   button {
