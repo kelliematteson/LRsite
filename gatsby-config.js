@@ -6,7 +6,14 @@ module.exports = {
   siteMetadata: {
     title: `Leena Rao`,
     description: `A freelance writer, a fashionista, a peleton goddess and a Mom to 2 little girls. The juggle is real.`,
-    author: `@gatsbyjs`
+    author: `Kellie Matteson`,
+    social: {
+      twitter: `leenarao`,
+      email: `leenakrao@gmail.com`,
+      linkedin: `in/leena-rao`,
+      facebook: `facebook.com/LeenaRao`,
+      instagram: `@leenarao`,
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

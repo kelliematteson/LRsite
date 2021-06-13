@@ -35,7 +35,7 @@ const ArticleStyles = styled.div`
 function SingleArticle({ article }) {
     
     return <ArticleStyles>
-        <GatsbyImage image={getImage(article.image.asset.gatsbyImageData)} />
+        <GatsbyImage image={getImage(article.image.asset.gatsbyImageData)} alt="" />
         <a href={article.link}><h2>{article.name}</h2></a>
         <p>{article.publication}</p>
         <p>{article.text}</p>

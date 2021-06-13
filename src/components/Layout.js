@@ -23,7 +23,6 @@ export default function Layout({ children }) {
             <GlobalStyles />
             <ContentStyles>
                 <Nav />
-                <Header />
                 {children}
                 <Footer />
             </ContentStyles>
