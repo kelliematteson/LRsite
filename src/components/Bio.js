@@ -23,11 +23,14 @@ export default function Bio() {
     justify-content: center;
     align-items: center;
     margin: 100px 0 0 250px;
+    padding: 1rem;
+    border: solid var(--pink) 4px;
     @media (max-width: 768px) {
       margin-left: 50px;
     }
   `;
     const BioText = styled.div`
+    display: flex;
     justify-content: center;
     padding: 20px;
     `;

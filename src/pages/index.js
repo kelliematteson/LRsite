@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import ArticleList from '../components/ArticleList';
-import TagFilter from '../components/TagFilter';
+
 
 
 
@@ -12,7 +12,6 @@ export default function HomePage({ data }) {
   
   return (
     <>
-    <TagFilter />
       <ArticleList articles={articles} />
     </>
   )

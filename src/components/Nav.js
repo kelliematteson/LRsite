@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 
 const Container = styled.div`
-    max-width: 220px;
-    width: 18%;
+    width: 200px;
+    height: 100%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -17,6 +17,15 @@ const Container = styled.div`
     justify-content: center;
     background: var(--pink);
     z-index: 1;
+    * {
+        text-decoration: none;
+      }
+      a {
+        font-style: normal;
+      }
+      a:before {
+        display: none;
+      }
 
     @media (max-width: 768px) {
         max-width: 100%;
