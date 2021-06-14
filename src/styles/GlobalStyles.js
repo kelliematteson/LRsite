@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 const GlobalStyles = createGlobalStyle`
   :root {
     --pink: #ff66cc;
@@ -43,6 +44,9 @@ const GlobalStyles = createGlobalStyle`
 
   img {
     max-width: 100%;
+  }
+  h1 {
+    font-family: 'Calligraffitti';
   }
 
 

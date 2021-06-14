@@ -12,6 +12,7 @@ export default function HomePage({ data }) {
   
   return (
     <>
+    <h2>Featured Stories</h2>
       <ArticleList articles={articles} />
     </>
   )

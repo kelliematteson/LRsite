@@ -66,6 +66,7 @@ const Social = styled(SubNav)`
   justify-content: space-around;
   > a {
     margin: 5;
+    width: 20px;
   }
 `;
     const data = useStaticQuery(graphql`
@@ -74,6 +75,9 @@ const Social = styled(SubNav)`
                 siteMetadata {
                     social {
                         facebook
+                        twitter
+                        linkedin
+                        instagram
                     }
                 }
             }

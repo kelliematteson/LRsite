@@ -8,7 +8,7 @@ module.exports = {
     description: `A freelance writer, a fashionista, a peleton goddess and a Mom to 2 little girls. The juggle is real.`,
     author: `Kellie Matteson`,
     social: {
-      twitter: `leenarao`,
+      twitter: `LeenaRao`,
       email: `leenakrao@gmail.com`,
       linkedin: `in/leena-rao`,
       facebook: `facebook.com/LeenaRao`,
