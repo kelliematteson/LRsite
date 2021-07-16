@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import ArticleList from '../components/ArticleList';
+import TagFilter from '../components/TagFilter';
 
 
 
@@ -13,7 +14,9 @@ export default function HomePage({ data }) {
   return (
     <>
     <h2>Featured Stories</h2>
+      <TagFilter />
       <ArticleList articles={articles} />
+
     </>
   )
 }
@@ -29,7 +32,6 @@ query ArticleQuery {
         }
       }
       link
-      tag
       name
       slug {
         current

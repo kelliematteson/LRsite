@@ -1,8 +1,9 @@
-// import dotenv from 'dotenv';
+require('dotenv').config()
 
-// dotenv.config({ path: '.env' });
+
 
 module.exports = {
+  
   siteMetadata: {
     title: `Leena Rao`,
     description: `A freelance writer, a fashionista, a peleton goddess and a Mom to 2 little girls. The juggle is real.`,
@@ -24,7 +25,7 @@ module.exports = {
         projectId: 'a4zfisgw',
         dataset: 'production',
         watchMode: true,
-        token: 'skW0sq9pzgcIxz6X3LAbsv458JityhLBJ8rdnrwPLUOhuFYjKnsTiIoLjoXdCF1rOvpDJdjSYBDLbvNxIjN6ta4FhXriJVaLNRCQoQKmsss2bAPfRBrNeEEnwKko6LnQzGTvIVUBevya1oTTI1POZai0Niy1LSGWCTllWsfKNsyg0bycdx7L',
+        token: process.env.SANITY_TOKEN,
       }
     },
     `gatsby-plugin-image`,
