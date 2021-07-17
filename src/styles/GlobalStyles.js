@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
     text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
     transition: all 0.2s;
     &:hover {
-      --cast: 4px;
+      padding-right: 25px;
     }
   }
 

@@ -22,8 +22,16 @@ export default function HomePage({ data }) {
 }
 
 export const query = graphql`
-query ArticleQuery {
-  articles: allSanityArticle {
+query ArticleQuery($tag: [String]) {
+  articles: allSanityArticle(filter: {
+    tags: {
+      elemMatch: {
+        name: {
+          in: $tag
+        }
+      }
+    }
+  }) {
     nodes {
       id
       image {
@@ -38,6 +46,10 @@ query ArticleQuery {
       }
       text
       publication
+      tags {
+        id
+        name
+      }
     }
   }
 }

@@ -5,9 +5,27 @@ import styled from 'styled-components';
 
 const TagStyles = styled.div`
   display: flex;
-  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   margin-bottom: 4rem;
-  gap 1rem;
+  a {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0 1rem;
+    align-items: center;
+    padding: 5px;
+    background: white;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: clamp(1.5rem, 1.4vw, 2.5rem);
+    .count {
+      background: var(--pink);
+      padding: 2px 5px;
+    }
+    &[aria-current='page'] {
+      background: red;
+    }
+  }
 `;
 
 function countArticlesInTags(articles) {
@@ -65,10 +83,14 @@ export default function TagFilter() {
   
     return (
         <TagStyles>
+          <Link to="/">
+            <span>All</span>
+    <span className="count">{articles.nodes.length}</span>
+          </Link>
           {tagsWithCounts.map((tag) => (
-          <Link to={`/tag/${tag.name}`} key={tag.name}>
+          <Link to={`/${tag.name}`} key={tag.name}>
             <span>{tag.name}</span>
-            <span>{tag.count}</span>
+            <span className="count">{tag.count}</span>
             </Link>
           ))}
         </TagStyles>

@@ -9,8 +9,16 @@ const ArticleGridStyles = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 4rem;
-    grid-auto-rows: 400px auto auto auto;
+    grid-auto-rows: 400px auto auto auto auto;
     margin-left: 240px;
+`;
+const TagButtonStyles = styled.div`
+display: flex;
+flex-direction: row;
+
+`;
+const EachButtonStyles = styled.button`
+
 `;
 
 const ArticleStyles = styled.div`
@@ -20,7 +28,7 @@ const ArticleStyles = styled.div`
         --rows: auto auto auto 1fr;
     }
     grid-template-rows: var(--rows, subgrid);
-    grid-row: span 4;
+    grid-row: span 5;
     grid-gap: 1rem;
     h2,
     p {
@@ -37,9 +45,13 @@ function SingleArticle({ article }) {
     return <ArticleStyles>
         <GatsbyImage image={getImage(article.image.asset.gatsbyImageData)} alt="" />
         <a href={article.link}><h2>{article.name}</h2></a>
-        <p>{article.tag}</p>
         <p>{article.publication}</p>
         <p>{article.text}</p>
+        <TagButtonStyles>
+            <EachButtonStyles>
+                {article.tags.map((tag) => tag.name + `   `) }
+            </EachButtonStyles>
+        </TagButtonStyles>
         
     </ArticleStyles>
 }
