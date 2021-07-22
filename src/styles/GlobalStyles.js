@@ -22,19 +22,21 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    background: var(--pink);
-    color: white;
-    border: 0;
-    padding: 0.6rem 1rem;
-    border-radius: 2px;
-    cursor: pointer;
-    --cast: 2px;
-    box-shadow: var(--cast) var(--cast) 0 var(--grey);
-    text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
-    transition: all 0.2s;
-    &:hover {
-      padding-right: 25px;
-    }
+    box-shadow:inset 0px 1px 0px 0px #fbafe3;
+	  background:linear-gradient(to bottom, #ff66cc 5%, #ef027d 100%);
+	  background-color:#ff66cc;
+	  border-radius:8px;
+	  border:2px solid #ee1eb5;
+	  display:inline-block;
+	  cursor:pointer;
+	  color:#ffffff;
+	  font-family:Verdana;
+	  font-size:13px;
+	  font-weight:bold;
+	  padding:6px 13px;
+	  text-decoration:none;
+	  text-shadow:0px 1px 0px #c70067;
+    
   }
 
   .gatsby-image-wrapper img[src*=base64\\,] {
@@ -46,9 +48,33 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
   h1 {
-    font-family: 'Calligraffitti';
+    font-family: alisha, sans-serif;
   }
-
+  h2 {
+    font-family: alisha, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+  }
+  
+  .articleTitle {
+    font-family: ltc-bodoni-175, serif;
+    font-size: 24px;
+  }
+  .articlePublication {
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .articleText {
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .smallTag {
+    display: flex;
+    margin: 5px;
+  }
 
 
 `;

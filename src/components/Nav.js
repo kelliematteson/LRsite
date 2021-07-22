@@ -39,14 +39,15 @@ const Container = styled.div`
 `;
 
 const Header = styled.h1`
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
-    text-transform: uppercase;
     display: inline-flex;
     margin-top: 3rem;
 
     @media (max-width: 768px) {
-        display: none;
+        positiion: fixed;
+        margin-top: 0;
+        margin-left: 0;
     }
 
 `;
@@ -101,8 +102,8 @@ export default function Nav() {
         <Container>
             <Header>{title}</Header>
             <Navigation>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
+                    <Link to="/"><p>Work</p></Link>
+                    <Link to="/about"><p>About</p></Link>
             </Navigation>
         </Container>
     )

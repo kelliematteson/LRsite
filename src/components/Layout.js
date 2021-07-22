@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import 'normalize.css';
 import GlobalStyles from '../styles/GlobalStyles';
 import Header from './header';
+import '../styles/custom.css';
 
 
 const ContentStyles = styled.div`
