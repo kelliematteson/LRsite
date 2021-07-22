@@ -1,14 +1,15 @@
-// import dotenv from 'dotenv';
+require('dotenv').config()
 
-// dotenv.config({ path: '.env' });
+
 
 module.exports = {
+  
   siteMetadata: {
     title: `Leena Rao`,
     description: `A freelance writer, a fashionista, a peleton goddess and a Mom to 2 little girls. The juggle is real.`,
     author: `Kellie Matteson`,
     social: {
-      twitter: `leenarao`,
+      twitter: `LeenaRao`,
       email: `leenakrao@gmail.com`,
       linkedin: `in/leena-rao`,
       facebook: `facebook.com/LeenaRao`,
@@ -24,7 +25,7 @@ module.exports = {
         projectId: 'a4zfisgw',
         dataset: 'production',
         watchMode: true,
-        token: 'skW0sq9pzgcIxz6X3LAbsv458JityhLBJ8rdnrwPLUOhuFYjKnsTiIoLjoXdCF1rOvpDJdjSYBDLbvNxIjN6ta4FhXriJVaLNRCQoQKmsss2bAPfRBrNeEEnwKko6LnQzGTvIVUBevya1oTTI1POZai0Niy1LSGWCTllWsfKNsyg0bycdx7L',
+        token: process.env.SANITY_TOKEN,
       }
     },
     `gatsby-plugin-image`,
@@ -50,6 +51,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

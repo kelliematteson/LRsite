@@ -3,9 +3,10 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 
+
 const Container = styled.div`
-    max-width: 220px;
-    width: 18%;
+    width: 200px;
+    height: 100%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -17,6 +18,15 @@ const Container = styled.div`
     justify-content: center;
     background: var(--pink);
     z-index: 1;
+    * {
+        text-decoration: none;
+      }
+      a {
+        font-style: normal;
+      }
+      a:before {
+        display: none;
+      }
 
     @media (max-width: 768px) {
         max-width: 100%;
@@ -29,14 +39,15 @@ const Container = styled.div`
 `;
 
 const Header = styled.h1`
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
-    text-transform: uppercase;
     display: inline-flex;
     margin-top: 3rem;
 
     @media (max-width: 768px) {
-        display: none;
+        positiion: fixed;
+        margin-top: 0;
+        margin-left: 0;
     }
 
 `;
@@ -91,8 +102,8 @@ export default function Nav() {
         <Container>
             <Header>{title}</Header>
             <Navigation>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
+                    <Link to="/"><p>Work</p></Link>
+                    <Link to="/about"><p>About</p></Link>
             </Navigation>
         </Container>
     )

@@ -5,6 +5,7 @@ import TagFilter from '../components/TagFilter';
 
 
 
+
 export default function HomePage({ data }) {
   
   const articles = data.articles.nodes;
@@ -12,15 +13,25 @@ export default function HomePage({ data }) {
   
   return (
     <>
-    <TagFilter />
+    <h2>Featured Stories</h2>
+      <TagFilter />
       <ArticleList articles={articles} />
+
     </>
   )
 }
 
 export const query = graphql`
-query ArticleQuery {
-  articles: allSanityArticle {
+query ArticleQuery($tag: [String]) {
+  articles: allSanityArticle(filter: {
+    tags: {
+      elemMatch: {
+        name: {
+          in: $tag
+        }
+      }
+    }
+  }) {
     nodes {
       id
       image {
@@ -29,13 +40,16 @@ query ArticleQuery {
         }
       }
       link
-      tag
       name
       slug {
         current
       }
       text
       publication
+      tags {
+        id
+        name
+      }
     }
   }
 }
