@@ -6,7 +6,11 @@ module.exports = {
   
   siteMetadata: {
     title: `Leena Rao`,
-    description: `A freelance writer, a fashionista, a peleton goddess and a Mom to 2 little girls. The juggle is real.`,
+    description: `A freelance writer, a fashionista, a peleton goddess and a Mom to 2 little girls. The juggle is real. Elizabeth Holmes is a New York Times best-selling author and veteran multimedia reporter. Her first book, HRH: So Many Thoughts on Royal Style, debuted on the New York Times best-seller list in November 2020. The Financial Times called it “a smooth, entertaining read fizzing with insight.” 
+
+    A contributing editor at Town & Country, Elizabeth’s work has appeared in a host of national outlets, including The New York Times, The Wall Street Journal, Vanity Fair, Real Simple, and InStyle. She is also the creator of the Webby-honored Instagram Stories series “So Many Thoughts,” which offers sartorial commentary on the royal family. `,
+    
+    
     author: `Kellie Matteson`,
     social: {
       twitter: `LeenaRao`,
@@ -47,7 +51,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/leenaRao.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

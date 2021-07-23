@@ -14,17 +14,31 @@ const TagStyles = styled.div`
     grid-gap: 0 1rem;
     align-items: center;
     padding: 5px;
-    background: white;
+    background: var(--offwhite);
     border-radius: 2px;
     text-decoration: none;
-    font-size: clamp(1.5rem, 1.4vw, 2.5rem);
+    font-size: 2rem;
+    color: #15134A;
     .count {
-      background: var(--pink);
+      background: var(--offwhite);
       padding: 2px 5px;
+      font-size: 16px;
     }
+    
     &[aria-current='page'] {
-      background: red;
+      background: var(--pink);
+      color: white;
+      opacity: 100%;
     }
+    &[aria-current='page'] .count {
+      background: var(--pink);
+      color: white;
+      opacity: 100%;
+    }
+  }
+ 
+  a:hover {
+    opacity: 60%;
   }
 `;
 
