@@ -13,7 +13,7 @@ export default function HomePage({ data }) {
   
   return (
     <>
-    <h2>Featured Stories</h2>
+    <h2 className="featuredStoriesTitle">Featured Stories</h2>
       <TagFilter />
       <ArticleList articles={articles} />
 

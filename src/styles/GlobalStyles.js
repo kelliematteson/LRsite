@@ -20,6 +20,9 @@ const GlobalStyles = createGlobalStyle`
     top: 0;
     right: 0;
   }
+  .image {
+    border: 3px solid white;
+  }
 
   button {
     box-shadow:inset 0px 1px 0px 0px #fbafe3;
@@ -63,7 +66,7 @@ const GlobalStyles = createGlobalStyle`
   .articlePublication {
     font-family: adobe-garamond-pro, serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
   }
   .articleText {
     font-family: adobe-garamond-pro, serif;
@@ -73,10 +76,35 @@ const GlobalStyles = createGlobalStyle`
   }
   .smallTag {
     display: flex;
-    margin: 5px;
+    padding: 10px;
+    font-family: adobe-garamond-pro, serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--pink);
+    text-transform: uppercase;
   }
-
-
+  .signature {
+    color: white;
+    font-family: adobe-garamond-pro, serif;
+    font-size: 11px;
+  }
+  .aboutTitle {
+    font-family: alisha, sans-serif;
+    font-size: 4.5rem;
+  }
+  .line {
+    width: 70%;
+   height: 1px;
+   border: 0 none;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 60px;
+   margin-bottom:40px;
+   background-color:#555;
+  }
+  .featuredStoriesTitle {
+    font-size: 4.5rem;
+  }
 `;
 
 export default GlobalStyles;

@@ -18,44 +18,53 @@ export default function Bio() {
     
     `);
 
+    const AboutContainer = styled.div`
+        display: flex;
+        flex-direction: column;
+    `;
+
     const BioContainer = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0 0 250px;
+    flex-direction: row;
+    margin-left: 20%;
     padding: 1rem;
-    border: solid var(--pink) 4px;
     @media (max-width: 768px) {
       margin-left: 50px;
     }
   `;
     const BioText = styled.div`
     display: flex;
+    width: 50%;
+    flex-direction: column;
     justify-content: center;
     padding: 20px;
+    
     `;
     const { title } = data.site.siteMetadata;
     const { description } = data.site.siteMetadata;
 
     return(
         <>
-        <BioContainer>
-        <StaticImage
-        src="../images/leenaRao.png"
-        alt="a photo of the writer"
-        placeholder="blurred"
-        style={{ marginLeft: `1rem`,
-        minWidth: `200px`}}
-        width={300}
-        quality={95}
-        formats={["AUTO", "WEBP", "AVIF"]}
-        />
-        <BioText>
-        {title}
-        <br />
-        {description}
-        </BioText>
-        </BioContainer>
+        <AboutContainer>
+            <h2 className="aboutTitle">About {title}</h2>
+            <hr className="line" />
+            <BioContainer>
+                <StaticImage
+                src="../images/leenaRao.png"
+                alt="a photo of the writer"
+                placeholder="blurred"
+                style={{ marginLeft: `1rem`,
+                minWidth: `200px`}}
+                width={300}
+                quality={95}
+                formats={["AUTO", "WEBP", "AVIF"]}
+                />
+                <BioText>
+                {description}
+                </BioText>
+            </BioContainer>
+            <hr className="line" />
+        </AboutContainer>
         </>
     )
 }

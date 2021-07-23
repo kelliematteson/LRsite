@@ -20,7 +20,7 @@ flex-direction: row;
 const EachButtonStyles = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 `;
 
 const ArticleStyles = styled.div`
@@ -45,13 +45,13 @@ const ArticleStyles = styled.div`
 function SingleArticle({ article }) {
     
     return <ArticleStyles>
-        <GatsbyImage image={getImage(article.image.asset.gatsbyImageData)} alt="" />
+        <a href={article.link}><GatsbyImage image={getImage(article.image.asset.gatsbyImageData)} alt="" className="image"/></a>
         <a href={article.link}><p className="articleTitle">{article.name}</p></a>
         <p className="articlePublication">{article.publication}</p>
         <p className="articleText">{article.text}</p>
         <TagButtonStyles>
             <EachButtonStyles>
-                {article.tags.map((tag) => <button className="smallTag">{tag.name}</button>) }
+                {article.tags.map((tag) => <p className="smallTag">{tag.name}</p>) }
             </EachButtonStyles>
         </TagButtonStyles>
         

@@ -68,6 +68,9 @@ const Social = styled(SubNav)`
     margin: 5;
     width: 20px;
   }
+  a:hover {
+    opacity: 50%;
+  }
 `;
     const data = useStaticQuery(graphql`
         query {
@@ -102,7 +105,7 @@ const Social = styled(SubNav)`
                 <StaticImage src="../images/whiteTwitter.png" alt="twitter" />
                 </a>
             </Social>
-        <p>&copy; Kellie Matteson {new Date().getFullYear()}</p>
+        <p className="signature">&copy; Kellie Matteson {new Date().getFullYear()}</p>
         </Footer>
     
     )

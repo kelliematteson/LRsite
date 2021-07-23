@@ -39,10 +39,20 @@ const Container = styled.div`
 `;
 
 const Header = styled.h1`
-    font-size: 4rem;
-    color: white;
-    display: inline-flex;
-    margin-top: 3rem;
+    
+    > a {
+        font-size: 4rem;
+        color: white;
+        display: inline-flex;
+        margin-top: 3rem;
+        text-decoration: none;
+    }
+    a:hover{
+        transform: rotate(10deg) scale(1.1);
+       
+    }
+ 
+    
 
     @media (max-width: 768px) {
         positiion: fixed;
@@ -100,7 +110,7 @@ export default function Nav() {
 // export default function Nav() {
     return(
         <Container>
-            <Header>{title}</Header>
+            <Header><Link to="/">{title}</Link></Header>
             <Navigation>
                     <Link to="/"><p>Work</p></Link>
                     <Link to="/about"><p>About</p></Link>
