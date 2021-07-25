@@ -86,25 +86,38 @@ const GlobalStyles = createGlobalStyle`
     font-family: adobe-garamond-pro, serif;
     font-size: 11px;
   }
+  .contactEmail {
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+  }
   .aboutTitle {
     font-family: alisha, sans-serif;
     font-size: 4.5rem;
+    @media(max-width: 768px) {
+      margin-left: 20px;
+      margin-top: 135px;
+      font-size: 3.5rem;
+    }
   }
   .line {
-    width: 70%;
+    width: 100%;
    height: 1px;
    border: 0 none;
    margin-right: auto;
    margin-left: auto;
-   margin-top: 60px;
+   margin-top: 40px;
    margin-bottom:40px;
    background-color:#555;
+   @media(max-width: 768px) {
+     display: none;
+   }
   }
   .featuredStoriesTitle {
     font-size: 4.5rem;
+    margin-left: 240px;
     @media(max-width: 768px) {
-      background-color: yellow;
-      margin-top: 125px;
+      margin-left: 20px;
+      margin-top: 135px;
       font-size: 3.5rem;
     }
   }

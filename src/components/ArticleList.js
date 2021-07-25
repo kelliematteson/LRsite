@@ -13,7 +13,7 @@ const ArticleGridStyles = styled.div`
     margin-left: 240px;
     box-sizing: border-box;
    @media(max-width: 768px) {
-       margin-left: 10px;
+       margin-left: 20px;
    }
 `;
 const TagButtonStyles = styled.div`
@@ -43,9 +43,6 @@ const ArticleStyles = styled.div`
     a {
         text-decoration: none;
         color: black;
-    }
-    @media(max-width: 768px) {
-        
     }
 `;
 
