@@ -9,8 +9,12 @@ const ArticleGridStyles = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 4rem;
-    grid-auto-rows: 400px auto auto auto auto;
+    grid-auto-rows: auto auto auto auto auto;
     margin-left: 240px;
+    box-sizing: border-box;
+   @media(max-width: 768px) {
+       margin-left: 10px;
+   }
 `;
 const TagButtonStyles = styled.div`
 display: flex;
@@ -39,6 +43,9 @@ const ArticleStyles = styled.div`
     a {
         text-decoration: none;
         color: black;
+    }
+    @media(max-width: 768px) {
+        
     }
 `;
 

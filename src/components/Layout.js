@@ -9,8 +9,11 @@ import '../styles/custom.css';
 
 const ContentStyles = styled.div`
     background: var(--offwhite);
-    padding: 2rem;
+    padding: 1rem;
     height: 100%;
+    @media (max-width: 768px) {
+        padding-bottom: 200px;
+    }
 `;
 
 
@@ -18,6 +21,7 @@ const ContentStyles = styled.div`
 
 export default function Layout({ children }) {
 
+    
     return(
         <>
             <GlobalStyles />

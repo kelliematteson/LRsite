@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
     right: 0;
   }
   .image {
-    border: 3px solid white;
+    border: 2px solid white;
   }
 
   button {
@@ -47,9 +47,7 @@ const GlobalStyles = createGlobalStyle`
     image-rendering: pixelated;
   }
 
-  img {
-    max-width: 100%;
-  }
+ 
   h1 {
     font-family: alisha, sans-serif;
   }
@@ -104,6 +102,11 @@ const GlobalStyles = createGlobalStyle`
   }
   .featuredStoriesTitle {
     font-size: 4.5rem;
+    @media(max-width: 768px) {
+      background-color: yellow;
+      margin-top: 125px;
+      font-size: 3.5rem;
+    }
   }
 `;
 

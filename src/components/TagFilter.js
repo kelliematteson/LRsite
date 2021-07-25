@@ -5,8 +5,9 @@ import styled from 'styled-components';
 
 const TagStyles = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: right;
   gap: 1rem;
+  border: 2px solid black;
   margin-bottom: 4rem;
   a {
     display: grid;
@@ -39,6 +40,12 @@ const TagStyles = styled.div`
  
   a:hover {
     opacity: 60%;
+  }
+  @media(max-width: 1024px) {
+   flex-wrap: wrap;
+   a {
+     font-size: 1.5rem;
+   }
   }
 `;
 
