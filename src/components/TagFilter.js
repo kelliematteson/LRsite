@@ -5,9 +5,9 @@ import styled from 'styled-components';
 
 const TagStyles = styled.div`
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  margin-left: 240px;
   gap: 1rem;
-  border: 2px solid black;
   margin-bottom: 4rem;
   a {
     display: grid;
@@ -43,9 +43,13 @@ const TagStyles = styled.div`
   }
   @media(max-width: 1024px) {
    flex-wrap: wrap;
+   margin-left: 240px;
    a {
      font-size: 1.5rem;
    }
+  }
+  @media(max-width: 768px) {
+    margin-left: 20px;
   }
 `;
 

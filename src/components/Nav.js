@@ -69,6 +69,8 @@ const Navigation = styled.nav`
     
     > a {
         font-size: 2rem;
+        font-family: adobe-garamond-pro, serif;
+        font-weight: 700;
         color: #fff;
         margin: 0 10px 15px;
         display: block;

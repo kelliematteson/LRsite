@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
+import { Leena } from './Leena';
 
 export default function Bio() {
 
@@ -21,25 +22,33 @@ export default function Bio() {
     const AboutContainer = styled.div`
         display: flex;
         flex-direction: column;
+        margin-left: 240px;
+        justify-content: center;
+        @media(max-width: 768px) {
+            margin-left: 20px;
+        }
     `;
 
     const BioContainer = styled.div`
     display: flex;
+    align-items: center;
     flex-direction: row;
-    margin-left: 20%;
-    padding: 1rem;
-    @media (max-width: 768px) {
-      margin-left: 50px;
+    @media(max-width: 1024px) {
+        flex-direction: column;
+        
     }
+    
   `;
     const BioText = styled.div`
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+    width: 70%;
+    margin-left: 20px;
+    padding: 15px;
+    @media(max-width: 1024px) {
+        width: 100%;
+    }
     
     `;
+    
     const { title } = data.site.siteMetadata;
     const { description } = data.site.siteMetadata;
 
@@ -48,22 +57,16 @@ export default function Bio() {
         <AboutContainer>
             <h2 className="aboutTitle">About {title}</h2>
             <hr className="line" />
-            <BioContainer>
-                <StaticImage
-                src="../images/leenaRao.png"
-                alt="a photo of the writer"
-                placeholder="blurred"
-                style={{ marginLeft: `1rem`,
-                minWidth: `200px`}}
-                width={300}
-                quality={95}
-                formats={["AUTO", "WEBP", "AVIF"]}
-                />
-                <BioText>
-                {description}
-                </BioText>
-            </BioContainer>
-            <hr className="line" />
+                <BioContainer>
+                    <Leena />
+                    <BioText>
+                    {description}
+                    </BioText>
+                </BioContainer>
+        <hr className="line" />
+        <p className="aboutTitle">Contact</p>
+        <p className="contactEmail">Direct Email</p>
+        <p>leenakrao@gmail.com</p>
         </AboutContainer>
         </>
     )
