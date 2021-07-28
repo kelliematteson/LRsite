@@ -15,10 +15,9 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
     text-align: center;
     height: 100%;
-    width: 82%;
+    width: 100%;
+    margin: 0;
     
-    top: 0;
-    right: 0;
   }
   .image {
     border: 2px solid white;
@@ -107,7 +106,7 @@ const GlobalStyles = createGlobalStyle`
    margin-left: auto;
    margin-top: 40px;
    margin-bottom:40px;
-   background-color:#555;
+   background-color:var(--pink);
    @media(max-width: 768px) {
      display: none;
    }
