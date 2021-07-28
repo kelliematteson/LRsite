@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 
-
+const WorkContainer = styled.div`
+    padding: 1.5rem;
+`;
 
 const ArticleGridStyles = styled.div`
     display: grid;
@@ -65,12 +67,14 @@ function SingleArticle({ article }) {
 export default function ArticleList({ articles }) {
     
     return (
+        <WorkContainer>
         <ArticleGridStyles>
             {articles.map((article) => (
             <SingleArticle key={article.id} article={article} />
             ))}
             
         </ArticleGridStyles>
+        </WorkContainer>
         
         
     )

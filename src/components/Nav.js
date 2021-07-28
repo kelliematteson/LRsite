@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 
 
+
+
 const Container = styled.div`
     width: 200px;
     height: 100%;
@@ -48,8 +50,7 @@ const Header = styled.h1`
         text-decoration: none;
     }
     a:hover{
-        transform: rotate(10deg) scale(1.1);
-       
+        opacity: 50%;
     }
  
     
@@ -92,6 +93,8 @@ const Navigation = styled.nav`
         }
     }
 `;
+
+
 
 export default function Nav() {
     const data = useStaticQuery(graphql`

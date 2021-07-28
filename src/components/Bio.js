@@ -18,7 +18,9 @@ export default function Bio() {
     
     
     `);
-
+    const LargeAboutContainer = styled.div`
+    padding: 1.5rem;
+    `;
     const AboutContainer = styled.div`
         display: flex;
         flex-direction: column;
@@ -54,6 +56,7 @@ export default function Bio() {
 
     return(
         <>
+        <LargeAboutContainer>
         <AboutContainer>
             <h2 className="aboutTitle">About {title}</h2>
             <hr className="line" />
@@ -68,6 +71,7 @@ export default function Bio() {
         <p className="contactEmail">Direct Email</p>
         <p>leenakrao@gmail.com</p>
         </AboutContainer>
+        </LargeAboutContainer>
         </>
     )
 }

@@ -16,17 +16,16 @@ export default function Footer () {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 2;
+    z-index: 100;
     @media (max-width: 768px) {
-      position: fixed;
-      width: 100%;
+      position: static;
       height: 100px;
-      bottom: 0;
-      left: 0;
+      width: 100%;
       display: inline-flex;
       flex-direction: row;
       align-items: center;
       margin-bottom: 0;
+      
     }
   `;
   const Navigation = styled.nav`
