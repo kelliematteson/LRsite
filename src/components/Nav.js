@@ -40,19 +40,38 @@ const Container = styled.div`
     }
 `;
 
-const Header = styled.h1`
+const Header = styled.div`
+    box-sizing: border-box;   
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    width: 240px;
+    background-color: var(--pink);
+    opacity: 0.95;
+    padding-top: 3.5rem;
+    margin: auto;
     
-    > a {
-        font-size: 4rem;
-        color: white;
-        display: inline-flex;
-        margin-top: 3rem;
-        text-decoration: none;
-    }
-    a:hover{
-        opacity: 50%;
-    }
- 
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      margin: auto;
+      text-decoration: none;
+
+      color: white;
+      :after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: white;
+        transition: width 0.5s;
+        position: relative;
+        top: 5px;
+      }
+      :hover::after {
+        width: 100%;
+        text-underline-offset: 0.4em;
+      }
     
 
     @media (max-width: 768px) {
@@ -115,7 +134,9 @@ export default function Nav() {
 // export default function Nav() {
     return(
         <Container>
-            <Header><Link to="/">{title}</Link></Header>
+            <Header><Link to="/">
+                <h1>{title}</h1>
+                </Link></Header>
             <Navigation>
                     <Link to="/"><p>Work</p></Link>
                     <Link to="/about"><p>About</p></Link>

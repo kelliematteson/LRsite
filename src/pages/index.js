@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ArticleList from '../components/ArticleList';
 import TagFilter from '../components/TagFilter';
+import SEO from '../components/SEO';
 
 
 
@@ -14,6 +15,7 @@ export default function HomePage({ data }) {
   
   return (
     <>
+    <SEO />
     <h2 className="featuredStoriesTitle">Featured Stories</h2>
       <TagFilter />
       <ArticleList articles={articles} />

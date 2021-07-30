@@ -110,12 +110,12 @@ export default function TagFilter() {
         <TagStyles>
           <Link to="/">
             <span>All</span>
-    <span className="count">{articles.nodes.length}</span>
+    {/* <span className="count">{articles.nodes.length}</span> */}
           </Link>
           {tagsWithCounts.map((tag) => (
           <Link to={`/${tag.name}`} key={tag.name}>
             <span>{tag.name}</span>
-            <span className="count">{tag.count}</span>
+            {/* <span className="count">{tag.count}</span> */}
             </Link>
           ))}
         </TagStyles>

@@ -114,12 +114,16 @@ const GlobalStyles = createGlobalStyle`
   .featuredStoriesTitle {
     font-size: 4.5rem;
     margin-left: 240px;
+   
     @media(max-width: 768px) {
       margin-left: 20px;
       margin-top: 135px;
       font-size: 3.5rem;
     }
   }
+
 `;
+
+
 
 export default GlobalStyles;
