@@ -67,9 +67,7 @@ export default function Bio() {
                     </BioText>
                 </BioContainer>
         <hr className="line" />
-        <p className="aboutTitle">Contact</p>
-        <p className="contactEmail">Direct Email</p>
-        <p>leenakrao@gmail.com</p>
+        <a class="contactEmail" href="mailto:leenakrao@gmail.com"><button>Get In Touch</button></a>
         </AboutContainer>
         </LargeAboutContainer>
         </>

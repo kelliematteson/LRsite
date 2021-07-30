@@ -24,20 +24,20 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    box-shadow:inset 0px 1px 0px 0px #fbafe3;
-	  background:linear-gradient(to bottom, #ff66cc 5%, #ef027d 100%);
-	  background-color:#ff66cc;
-	  border-radius:8px;
-	  border:2px solid #ee1eb5;
+    display: flex;
+    border: 2px solid white;
+	  background-color:white;
 	  display:inline-block;
 	  cursor:pointer;
-	  color:#ffffff;
-	  font-family:Verdana;
-	  font-size:13px;
-	  font-weight:bold;
+	  color:var(--pink);
+	  font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
 	  padding:6px 13px;
 	  text-decoration:none;
-	  text-shadow:0px 1px 0px #c70067;
+	  :hover {
+      background-color: var(--pink);
+      color: white;
+    }
     
   }
 
@@ -88,6 +88,10 @@ const GlobalStyles = createGlobalStyle`
   .contactEmail {
     font-family: futura-pt, sans-serif;
     text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    display:inline-block;
+    cursor:pointer;
   }
   .aboutTitle {
     font-family: alisha, sans-serif;

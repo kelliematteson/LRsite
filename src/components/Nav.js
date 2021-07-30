@@ -101,6 +101,9 @@ const Navigation = styled.nav`
         &[aria-current='page']{
             color: black;
         }
+        :hover {
+            opacity: 50%;
+        }
     }
 
     @media (max-width: 768px) {
