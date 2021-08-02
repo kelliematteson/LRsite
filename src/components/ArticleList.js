@@ -46,7 +46,14 @@ const ArticleStyles = styled.div`
         text-decoration: none;
         color: black;
     }
+    &:hover {
+        .gatsby-image-wrapper {
+            opacity: 0.7;
+            filter: grayscale(100%);
+        }
+    }
 `;
+
 
 function SingleArticle({ article }) {
     
@@ -55,11 +62,11 @@ function SingleArticle({ article }) {
         <a href={article.link}><p className="articleTitle">{article.name}</p></a>
         <p className="articlePublication">{article.publication}</p>
         <p className="articleText">{article.text}</p>
-        <TagButtonStyles>
+        {/* <TagButtonStyles>
             <EachButtonStyles>
                 {article.tags.map((tag) => <p className="smallTag">{tag.name}</p>) }
             </EachButtonStyles>
-        </TagButtonStyles>
+        </TagButtonStyles> */}
         
     </ArticleStyles>
 }
