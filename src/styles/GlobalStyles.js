@@ -98,8 +98,9 @@ const GlobalStyles = createGlobalStyle`
     font-size: 4.5rem;
     @media(max-width: 768px) {
       margin-left: 20px;
-      margin-top: 135px;
-      font-size: 3.5rem;
+      margin-top: 150px;
+      font-size: 2.5rem;
+      
     }
   }
   .line {
@@ -121,8 +122,8 @@ const GlobalStyles = createGlobalStyle`
    
     @media(max-width: 768px) {
       margin-left: 20px;
-      margin-top: 135px;
-      font-size: 3.5rem;
+      margin-top: 150px;
+      font-size: 2.5rem;
     }
   }
 

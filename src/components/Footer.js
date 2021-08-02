@@ -22,7 +22,7 @@ export default function Footer () {
       height: 100px;
       width: 100%;
       display: inline-flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       margin-bottom: 0;
       
@@ -71,6 +71,11 @@ const Social = styled(SubNav)`
     opacity: 50%;
   }
 `;
+const Signature = styled.div`
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  `;
     const data = useStaticQuery(graphql`
         query {
             site {
@@ -104,7 +109,7 @@ const Social = styled(SubNav)`
                 <StaticImage src="../images/whiteTwitter.png" alt="twitter" />
                 </a>
             </Social>
-        <p className="signature">&copy; Kellie Matteson {new Date().getFullYear()}</p>
+        <Signature className="signature">&copy; Kellie Matteson {new Date().getFullYear()}</Signature>
         </Footer>
     
     )

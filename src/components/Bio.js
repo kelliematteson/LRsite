@@ -44,7 +44,7 @@ export default function Bio() {
     const BioText = styled.div`
     width: 70%;
     margin-left: 20px;
-    padding: 15px;
+    padding: 20px;
     @media(max-width: 1024px) {
         width: 100%;
     }
