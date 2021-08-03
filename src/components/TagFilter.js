@@ -9,6 +9,7 @@ const TagStyles = styled.div`
   margin-left: 240px;
   gap: 1rem;
   margin-bottom: 4rem;
+  font-family: ltc-bodoni-175, serif;
   a {
     display: grid;
     grid-template-columns: auto 1fr;
