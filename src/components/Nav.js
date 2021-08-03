@@ -33,7 +33,7 @@ const Container = styled.div`
     @media (max-width: 768px) {
          max-width: 100%;
          width: 100%;
-         height: 130px;
+         height: 90px;
          flex-direction: row;
          display: inline-flex;
          justify-content: space-around;
@@ -78,19 +78,22 @@ const Header = styled.div`
         positiion: fixed;
         margin-top: 0;
         margin-left: 0;
+        h1 {
+            font-size: 3rem;
+        }
     }
 
 `;
 
 
 const Navigation = styled.nav`
-    padding: 1vw;
+    padding: 2vw;
     flex-direction: column;
     
     > a {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-family: adobe-garamond-pro, serif;
-        font-weight: 700;
+        font-weight: 400;
         color: #fff;
         margin: 0 10px 15px;
         display: block;
