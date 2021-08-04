@@ -103,6 +103,11 @@ const GlobalStyles = createGlobalStyle`
       
     }
   }
+  .aboutText {
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
   .line {
     width: 100%;
    height: 1px;

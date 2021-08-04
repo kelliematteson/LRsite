@@ -3,6 +3,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { Leena } from './Leena';
+import AboutSection from '../components/AboutSection';
 
 export default function Bio() {
 
@@ -44,9 +45,11 @@ export default function Bio() {
     const BioText = styled.div`
     width: 70%;
     margin-left: 20px;
-    padding: 20px;
+    padding: 25px;
+    text-align: left;
     @media(max-width: 1024px) {
         width: 100%;
+        margin: 0px 20px 0px 20px;
     }
     
     `;
@@ -63,7 +66,7 @@ export default function Bio() {
                 <BioContainer>
                     <Leena />
                     <BioText>
-                    {description}
+                    <AboutSection />
                     </BioText>
                 </BioContainer>
         <hr className="line" />
