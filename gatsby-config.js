@@ -12,9 +12,9 @@ module.exports = {
     social: {
       twitter: `LeenaRao`,
       email: `leenakrao@gmail.com`,
-      linkedin: `in/leena-rao`,
-      facebook: `facebook.com/LeenaRao`,
-      instagram: `@leenarao`,
+      linkedin: `leena-rao-24221762`,
+      facebook: `LeenaRao`,
+      instagram: `leenarao`,
     }
   },
   plugins: [

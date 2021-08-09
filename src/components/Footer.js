@@ -99,7 +99,7 @@ const Signature = styled.div`
                 <a href={`https://facebook.com/${social.facebook}`} target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/whiteFacebook.png" alt="facebook" />
                 </a>
-                <a href={`https://linkedin.com/${social.linkedin}`} target="_blank" rel="noopener noreferrer">
+                <a href={`https://linkedin.com/in/${social.linkedin}`} target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/whiteLinkedin.png" alt="linked in" />
                 </a>
                 <a href={`https://instagram.com/${social.instagram}`} target="_blank" rel="noopener noreferrer">
